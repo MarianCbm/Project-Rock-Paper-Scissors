@@ -1,3 +1,8 @@
+#first {
+    text-align: center;
+}
+
+
 #container {
     display:flex;
     margin:auto;
@@ -36,6 +41,10 @@
     font-weight: bold;
     background-color: blue;
 
+}
+
+#result {
+    text-align:center;
 }
 
 
