@@ -40,16 +40,16 @@ rbtn.addEventListener('click',()=>{
     userInput="rock";
     computerInput=getComputerChoice();
     playRound(userInput,computerInput);
-    if (roundsPlayed===5){
-        if(lostRounds>wonRounds){
-            round.textContent="You lost! Let's play again!";
-        }
-        else if(lostRounds<wonRounds) {
-            round.textContent="You Won! Let's play again!"; 
-        }
-        else {
-            round.textContent="Draw! Let's play again!";
-        } 
+    if (lostRounds===5) {
+        round.textContent="You lost! Let's play again!";
+        lostRounds=0;
+        wonRounds=0;
+        roundsPlayed=0;
+    }
+    else if (wonRoundsRounds===5) {
+        round.textContent="You lost! Let's play again!";
+        lostRounds=0;
+        wonRounds=0;
         roundsPlayed=0;
     }
 })
@@ -59,16 +59,16 @@ pbtn.addEventListener('click',()=>{
     userInput="paper";
     computerInput=getComputerChoice();
     playRound(userInput,computerInput);
-    if (roundsPlayed===5){
-        if(lostRounds>wonRounds){
-            round.textContent="You lost! Let's play again!";
-        }
-        else if(lostRounds<wonRounds) {
-            round.textContent="You Won! Let's play again!"; 
-        }
-        else {
-            round.textContent="Draw! Let's play again!";
-        } 
+    if (lostRounds===5) {
+        round.textContent="You lost! Let's play again!";
+        lostRounds=0;
+        wonRounds=0;
+        roundsPlayed=0;
+    }
+    else if (wonRoundsRounds===5) {
+        round.textContent="You lost! Let's play again!";
+        lostRounds=0;
+        wonRounds=0;
         roundsPlayed=0;
     }
     
@@ -79,18 +79,19 @@ sbtn.addEventListener('click',()=>{
     userInput="scissors";
     computerInput=getComputerChoice();
     playRound(userInput,computerInput);
-    if (roundsPlayed===5){
-        if(lostRounds>wonRounds){
-            round.textContent="You lost! Let's play again!";
-        }
-        else if(lostRounds<wonRounds) {
-            round.textContent="You Won! Let's play again!"; 
-        }
-        else {
-            round.textContent="Draw! Let's play again!";
-        } 
+    if (lostRounds===5) {
+        round.textContent="You lost! Let's play again!";
+        lostRounds=0;
+        wonRounds=0;
         roundsPlayed=0;
     }
+    else if (wonRoundsRounds===5) {
+        round.textContent="You lost! Let's play again!";
+        lostRounds=0;
+        wonRounds=0;
+        roundsPlayed=0;
+    }
+    
 })
 
 
